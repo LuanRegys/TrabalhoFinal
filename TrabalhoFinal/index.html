@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simulador ABB</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="controls">
+    <input type="number" id="valor" placeholder="Valor" />
+    <button onclick="inserir()">Inserir</button>
+    <button onclick="buscar()">Buscar</button>
+    <button onclick="remover()">Remover</button>
+    <button onclick="travessia('emOrdem')">Em Ordem</button>
+    <button onclick="travessia('preOrdem')">Pré Ordem</button>
+    <button onclick="travessia('posOrdem')">Pós Ordem</button>
+    <button onclick="travessia('bfs')">BFS</button>
+    <button onclick="travessia('dfs')">DFS</button>
+    <button onclick="resetView()">Resetar Visão</button>
+  </div>
+
+  <!-- Aqui o canvas dentro de uma div rolável -->
+  <div id="canvas-container">
+    <canvas id="canvas" width="2000" height="1000"></canvas>
+  </div>
+
+  <textarea id="saida" rows="10" cols="50" readonly></textarea>
+
+  <script src="script.js"></script>
+</body>
+</html>
